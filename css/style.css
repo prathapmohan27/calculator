@@ -1,0 +1,79 @@
+html{
+    height: 100%;
+}
+
+body{
+    padding: 50px;
+    background-image:linear-gradient(#6097f0,#363b42) ;
+}
+#container{
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    height: 650px;
+    width: 450px;
+    border: 2px solid;
+    border-radius: 10px;
+    background:black;
+    flex-direction: column;
+    
+}
+#screen{
+    width: 440px;
+    height: 150px;
+    border:2px solid;
+    border-radius: 10px;
+    background: seashell;
+    padding: 5px;
+    flex-direction: column; 
+}
+#screen #previous-value{
+    text-align: right;
+    font-size: 1em;
+    font-weight: 800;
+}
+ #screen #current-value{
+     text-align: right;
+    font-size: 2em;  
+} 
+  
+#buttons{
+    height: 470px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    
+}
+#buttons div{
+    font-size: 2em;
+    text-align: center;
+    color: black;
+    border: 1px solid;
+    padding: 20px 0;
+    border-radius: 10px;
+    background:white;
+}
+#equal{
+  
+    grid-area: 5 / 3  / span 1/span 2;
+}
+#buttons .operators{
+    background: rgb(95, 102, 110);
+}
+#buttons #allClear {
+    background: rgb(237, 100, 100);
+}
+
+#buttons .operators:hover{
+    background:rgb(136, 233, 252);
+}
+#buttons #equal:hover{
+    background:rgb(117, 245, 66);
+}
+#buttons .numbers:hover{
+    transform: scale(1.1);
+}
+#buttons #allClear:hover{
+    background: rgb(191, 4, 29);
+}
+
